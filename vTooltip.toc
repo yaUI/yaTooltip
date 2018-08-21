@@ -1,0 +1,10 @@
+## Interface: 80000
+## Title: |cffFA2384v|rTooltip
+## DefaultState: Enabled
+## LoadOnDemand: 0
+## Dependencies: vCore, vMedia
+
+cfg.lua
+lib.lua
+namehover.lua
+core.lua
