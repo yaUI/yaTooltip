@@ -30,6 +30,7 @@ for i = 1, #FACTION_BAR_COLORS do
 end
 
 lib.SetBackdropStyle = function(self, style)
+	if self:IsForbidden() then return end -- don't mess with forbidden frames, which sometimes randomly happens
 	if self.TopOverlay then self.TopOverlay:Hide() end
 	if self.BottomOverlay then self.BottomOverlay:Hide() end
 

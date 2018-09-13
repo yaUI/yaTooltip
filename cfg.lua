@@ -5,7 +5,7 @@ local cfg = CreateFrame("Frame")
 
 cfg.mouseOverTooltip = false
 
-cfg.textColor = {0.4,0.4,0.4}
+cfg.textColor = {0.8,0.8,0.8}
 cfg.bossColor = {1,0,0}
 cfg.eliteColor = {1,0,0.5}
 cfg.rareeliteColor = {1,0.5,0}
