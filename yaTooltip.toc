@@ -1,0 +1,11 @@
+## Interface: 80000
+## Author: Lofbergio - https://github.com/lofbergio
+## Title: |cffFA2384ya|rTooltip
+## DefaultState: Enabled
+## LoadOnDemand: 0
+## Dependencies: yaCore, yaMedia
+
+cfg.lua
+lib.lua
+namehover.lua
+core.lua

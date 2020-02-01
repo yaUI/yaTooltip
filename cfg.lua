@@ -1,5 +1,5 @@
 local addon, ns = ...
-local E, M = unpack(vCore);
+local E, M = unpack(yaCore);
 local cfg = CreateFrame("Frame")
 --------------
 
@@ -22,8 +22,8 @@ cfg.azeriteBorderColor = {1,0.3,0,1}
 --cfg.pos = { "BOTTOMRIGHT", UIParent, "BOTTOMRIGHT", -10, 180 }
 cfg.pos = "ANCHOR_NONE" --"ANCHOR_CURSOR"
 
-cfg.whiteSquare = M:Fetch("vui", "backdrop")
-cfg.barTexture = M:Fetch("vui", "statusbar")
+cfg.whiteSquare = M:Fetch("yaui", "backdrop")
+cfg.barTexture = M:Fetch("yaui", "statusbar")
 cfg.fontBold = M:Fetch("font", "RobotoBold")
 cfg.font = M:Fetch("font", "Roboto")
 
