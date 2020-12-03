@@ -6,6 +6,7 @@ local lib = ns.lib
 
 local unpack, type = unpack, type
 local RAID_CLASS_COLORS, FACTION_BAR_COLORS = RAID_CLASS_COLORS, FACTION_BAR_COLORS
+Mixin(GameTooltip, BackdropTemplateMixin)
 local GameTooltip, GameTooltipStatusBar = GameTooltip, GameTooltipStatusBar
 
 cfg.targetColorHex = lib.GetHexColor(cfg.targetColor)
@@ -35,7 +36,7 @@ hooksecurefunc(GameTooltipStatusBar,"SetStatusBarColor", lib.SetStatusBarColor)
 
 if cfg.pos then hooksecurefunc("GameTooltip_SetDefaultAnchor", lib.SetDefaultAnchor) end
 
-hooksecurefunc("GameTooltip_SetBackdropStyle", lib.SetBackdropStyle)
+hooksecurefunc("SharedTooltip_SetBackdropStyle", lib.SetBackdropStyle)
 
 GameTooltip:HookScript("OnTooltipSetUnit", lib.OnTooltipSetUnit)
 
